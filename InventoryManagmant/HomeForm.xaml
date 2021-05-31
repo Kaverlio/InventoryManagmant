@@ -1,0 +1,56 @@
+﻿<Window x:Class="InventoryManagmant.HomeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagmant"
+        mc:Ignorable="d"
+        Height="500" Width="1000" WindowStyle="ThreeDBorderWindow" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Rectangle Height="70" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF2281D1" Offset="0.4"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        <Label Content="Home Page" Foreground="White" FontSize="24" Width="136" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20" Grid.Row="0" Grid.Column="1"/>
+
+        <Button x:Name="CheakDollars" Content="$" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0"  Width="130" Background="Transparent" BorderBrush="#00000000" Height="66" Click="CheakDollars_Click" Grid.Row="0" Cursor="Hand" FontSize="36" FontWeight="Bold" FontStyle="Italic" Foreground="#FFF7F7F7"/>
+        
+        <Button Content="PRODUCTS" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,0"  Height="80" Width="200" Click="Button_Click_1" Grid.Row="1" Grid.Column="0"/>
+        <Button Content="CASTOMERS" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,0" Height="80" Width="200" Click="Button_Click_4" Grid.Row="2" Grid.Column="0"/>
+        <Button Content="CATEGORIES" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Height="80" Width="200" Click="Button_Click_3" Grid.Row="2" Grid.Column="1"/>
+        <Button Content="USERS" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0"  Height="80" Width="200" Click="Button_Click_5" Grid.Row="1" Grid.Column="2"/>
+        <Button Content="ORDERS" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" Height="80" Width="200" Click="Button_Click_2" Grid.Row="2" Grid.Column="2"/>
+        <Button Content="LOGOUT" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30"  Height="35" Width="110" Click="Button_Click_6" Grid.Row="3" Grid.Column="1"/>
+
+        <Rectangle Height="15" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="3">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF34268A" Offset="0.4"/>
+                    <GradientStop Color="#FF2281D1" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Window>
